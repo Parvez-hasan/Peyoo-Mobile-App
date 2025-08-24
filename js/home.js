@@ -36,6 +36,32 @@ document.getElementById("add-money-btn").addEventListener("click", function(e){
 
 });
 
+
+/// withdraw-btn 
+document.getElementById("withdraw-btn").addEventListener("click", function(e){
+  e.preventDefault()
+  //console.log("withdraw btn click");
+
+  const amount = parseInt(document.getElementById("withdraw-amount").value)
+  const avalaBalance = parseInt(document.getElementById("ab-balance").innerText)
+
+  //console.log(amount, avalaBalance);
+
+  const totaoNewAvalaBalance = avalaBalance - amount 
+
+  //console.log(totaoNewAvalaBalance);
+
+  document.getElementById("ab-balance").innerText = totaoNewAvalaBalance ;
+  
+
+})
+
+
+
+
+
+
+
 /// toggleintg section
 
 document.getElementById("add-button").addEventListener("click", function(){
