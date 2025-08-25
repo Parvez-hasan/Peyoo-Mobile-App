@@ -56,7 +56,6 @@ document.getElementById("add-money-btn").addEventListener("click", function (e) 
     alert("please right pin number")
 
     return;
-
   }
 
   //console.log(avalBalance);
@@ -92,23 +91,38 @@ document.getElementById("withdraw-btn").addEventListener("click", function (e) {
 
 /// toggleintg section ///
 
+//add money//
+
 document.getElementById("add-button").addEventListener("click", function () {
   document.getElementById("cash-out-perent").style.display = "none";
   document.getElementById("transfer-money-perent").style.display= "none";
+  document.getElementById("get-bonus-perent").style.display= "none";
   document.getElementById("add-money-perent").style.display = "block";
 
 })
-
+//cash out //
 document.getElementById("cash-out-button").addEventListener("click", function () {
   document.getElementById("add-money-perent").style.display = "none";
   document.getElementById("transfer-money-perent").style.display= "none";
+  document.getElementById("get-bonus-perent").style.display= "none";
   document.getElementById("cash-out-perent").style.display = "block";
 
 })
-
+// trasfer money
 document.getElementById("transfer-button").addEventListener("click", function(){
     document.getElementById("add-money-perent").style.display = "none";
     document.getElementById("cash-out-perent").style.display = "none";
+    document.getElementById("get-bonus-perent").style.display= "none";
   document.getElementById("transfer-money-perent").style.display= "block"
 
 })
+ //get bonus
+
+document.getElementById("get-bonus-button").addEventListener("click", function(){
+    document.getElementById("add-money-perent").style.display = "none";
+    document.getElementById("cash-out-perent").style.display = "none";
+    document.getElementById("transfer-money-perent").style.display= "none"
+  document.getElementById("get-bonus-perent").style.display= "block";
+
+})
+
