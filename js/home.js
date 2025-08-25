@@ -94,12 +94,14 @@ document.getElementById("withdraw-btn").addEventListener("click", function (e) {
 
 document.getElementById("add-button").addEventListener("click", function () {
   document.getElementById("cash-out-perent").style.display = "none";
+  document.getElementById("transfer-money-perent").style.display= "none";
   document.getElementById("add-money-perent").style.display = "block";
 
 })
 
 document.getElementById("cash-out-button").addEventListener("click", function () {
   document.getElementById("add-money-perent").style.display = "none";
+  document.getElementById("transfer-money-perent").style.display= "none";
   document.getElementById("cash-out-perent").style.display = "block";
 
 })
@@ -107,6 +109,6 @@ document.getElementById("cash-out-button").addEventListener("click", function ()
 document.getElementById("transfer-button").addEventListener("click", function(){
     document.getElementById("add-money-perent").style.display = "none";
     document.getElementById("cash-out-perent").style.display = "none";
-  document.getElementById("transfer-money-perent").style.display="block"
+  document.getElementById("transfer-money-perent").style.display= "block"
 
 })
